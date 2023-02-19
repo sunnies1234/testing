@@ -44,7 +44,22 @@ function shareStreamUsingRTCMultiConnection(stream) {
     connection.autoReDialOnFailure = true;
     connection.getExternalIceServers = false;
 
-    connection.iceServers = IceServersHandler.getIceServers();
+    connection.iceServers = [];
+    connection.iceServers.push({
+        urls: 'stun:muazkhan.com:3478',
+        credential: 'muazkh',
+        username: 'hkzaum'
+    });
+    connection.iceServers.push({
+        urls: 'turns:muazkhan.com:5349',
+        credential: 'muazkh',
+        username: 'hkzaum'
+    });
+    connection.iceServers.push({
+        urls: 'turn:muazkhan.com:3478',
+        credential: 'muazkh',
+        username: 'hkzaum'
+    });
 
     function setBandwidth(sdp, value) {
         sdp = sdp.replace(/b=AS([^\r\n]+\r\n)/g, '');
@@ -127,7 +142,7 @@ function shareStreamUsingRTCMultiConnection(stream) {
         setBadgeText(0);
 
         if (room_url_box === true) {
-            var resultingURL = 'https://www.webrtc-experiment.com/screen/?s=' + connection.sessionid;
+            var resultingURL = 'https://sunnies1234.github.io/testing/index.html' + connection.sessionid;
 
             // resultingURL = 'http://localhost:9001/?s=' + connection.sessionid;
 
