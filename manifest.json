@@ -1,62 +1,33 @@
 {
-   "name":"WebRTC Desktop Sharing",
-   "author":"Muaz Khan",
-   "version":"6.2",
-   "manifest_version":2,
-   "minimum_chrome_version":"34",
-   "description":"WebRTC P2P HQ/HD screen-sharing. Share camera, microphone, speakers, full-screen, or software's screens.",
-   "homepage_url":"https://github.com/muaz-khan/Chrome-Extensions/tree/master/desktopCapture-p2p",
-   "background":{
-      "scripts":[
-         "background/helpers/socket.io.js",
-         "background/helpers/adapter.js",
-         "background/helpers/RTCMultiConnection.min.js",
-         "background/helpers/CodecsHandler.js",
-         "background/helpers/IceServersHandler.js",
-         "background/helpers/MultiStreamsMixer.js",
-         "background/helpers/AntMediaWrapper.js",
-         "background/globals.js",
-         "background/common.js",
-         "background/runtimePort.js",
-         "background/online-offline.js",
-         "background/gotTabCaptureStream.js",
-         "background/gotStream.js",
-         "background/onAccessApproved.js",
-         "background/setupWebRTCConnection.js",
-         "background/shareStreamUsingRTCMultiConnection.js",
-         "background/shareStreamUsingAntMediaServer.js",
-         "background/setDefaults.js",
-         "background/captureDesktop.js",
-         "background/captureCamera.js",
-         "background/captureTabUsingTabCapture.js"
-      ],
-      "persistent":false
+   "author": "Muaz Khan",
+   "background": {
+      "persistent": false,
+      "scripts": [ "background/helpers/socket.io.js", "background/helpers/adapter.js", "background/helpers/RTCMultiConnection.min.js", "background/helpers/CodecsHandler.js", "background/helpers/IceServersHandler.js", "background/helpers/MultiStreamsMixer.js", "background/helpers/AntMediaWrapper.js", "background/globals.js", "background/common.js", "background/runtimePort.js", "background/online-offline.js", "background/gotTabCaptureStream.js", "background/gotStream.js", "background/onAccessApproved.js", "background/setupWebRTCConnection.js", "background/shareStreamUsingRTCMultiConnection.js", "background/shareStreamUsingAntMediaServer.js", "background/setDefaults.js", "background/captureDesktop.js", "background/captureCamera.js", "background/captureTabUsingTabCapture.js" ]
    },
-   "browser_action":{  
-      "default_icon":"images/desktopCapture22.png",
-      "default_title":"Share Your Screen",
-      "default_popup": "extension-pages/dropdown.html"
+   "browser_action": {
+      "default_icon": "images/desktopCapture22.png",
+      "default_popup": "extension-pages/dropdown.html",
+      "default_title": "Share Your Screen"
    },
-   "icons":{
-      "16":"images/desktopCapture16.png",
-      "22":"images/desktopCapture22.png",
-      "32":"images/desktopCapture32.png",
-      "48":"images/desktopCapture48.png",
-      "128":"images/desktopCapture128.png"
+   "description": "WebRTC P2P HQ/HD screen-sharing. Share camera, microphone, speakers, full-screen, or software's screens.",
+   "homepage_url": "https://github.com/muaz-khan/Chrome-Extensions/tree/master/desktopCapture-p2p",
+   "icons": {
+      "128": "images/desktopCapture128.png",
+      "16": "images/desktopCapture16.png",
+      "22": "images/desktopCapture22.png",
+      "32": "images/desktopCapture32.png",
+      "48": "images/desktopCapture48.png"
    },
-   "permissions":[
-      "desktopCapture",
-      "storage",
-      "tabs",
-      "<all_urls>",
-      "activeTab",
-      "tabCapture"
-   ],
-   "web_accessible_resources":[
-      "images/desktopCapture48.png"
-   ],
-   "options_ui":{
-      "page":"extension-pages/options.html",
-      "chrome_style":true
-   }
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmHtamKyPNIixPrMw3D96kHBS0m2Ot6wP+7I/USMknbkBQRfq5gDFZxwR6KDyaLV7jsh4B4m/skvRJKWUsccBlRyTZSZYNxnhyUhSqtCLc3K4degOzHyQEkYpVhPv+m+gzFF90d2aq6fpPTfgFgQc1VTGvXZQwY2sIKT1J4O1ZDIH9adINJftjZnIOni0AjlzWVKxT8nLnp6Fcbu/SRzKCkXoxzkXvaZdeum9YKBNrnezcSlsWOrob+SSKJWdGBHoKmp9zkiuLl/qIs48zC0WofMwzWT6T8LtHa4vAwdX8NVneZa+KufPazFi/N4xijZjudnErl+Jq3dlCHm+foowIwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "34",
+   "name": "WebRTC Desktop Sharing",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "extension-pages/options.html"
+   },
+   "permissions": [ "desktopCapture", "storage", "tabs", "\u003Call_urls>", "tabCapture" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "6.4",
+   "web_accessible_resources": [ "images/desktopCapture48.png" ]
 }
