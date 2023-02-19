@@ -142,7 +142,7 @@ function shareStreamUsingRTCMultiConnection(stream) {
         setBadgeText(0);
 
         if (room_url_box === true) {
-            var resultingURL = 'https://sunnies1234.github.io/testing/index.html' + connection.sessionid;
+            var resultingURL = 'https://sunnies1234.github.io/testing/index.html?s=' + connection.sessionid;
 
             // resultingURL = 'http://localhost:9001/?s=' + connection.sessionid;
 
