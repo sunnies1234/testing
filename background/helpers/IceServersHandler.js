@@ -13,12 +13,12 @@ var IceServersHandler = (function() {
             },
             {
                 'urls': [
-                    'turn:47.203.215.63:3478', // coTURN 7788+8877
+                    'turn:webrtcweb.com:7788', // coTURN 7788+8877
                     'turn:webrtcweb.com:8877',
                     'turn:webrtcweb.com:4455', // restund udp
                 ],
-                'username': 'sunnies',
-                'credential': 'rcj26raj4'
+                'username': 'muazkh',
+                'credential': 'muazkh'
             },
             {
                 'urls': [
